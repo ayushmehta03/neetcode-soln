@@ -3,7 +3,11 @@
 using namespace std;
 
 
+// approcah ->hashmap
 
+// time complexity-> O(n)
+
+// space complexity -> auxilary beacuse O(2*26)
 
 bool check(string &s,string &t){
     if(s.length()!=t.length()) return false;
