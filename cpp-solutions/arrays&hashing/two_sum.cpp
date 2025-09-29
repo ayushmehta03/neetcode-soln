@@ -6,7 +6,7 @@ using namespace std;
 
 // Approach -> Hashmap
 // Time Complexity -> O(n)
-// Space Complexity -> O(n) (auxiliary space for hashmap)
+// Space Complexity -> O(n) ( hashmap)
 
 vector<int> twoSum(vector<int>& nums, int target) {
     unordered_map<int, int> mp;
