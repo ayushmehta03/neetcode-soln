@@ -4,6 +4,8 @@
 Welcome to the **NeetCode 150 Solutions Repository**!  
 This repo is a community effort to collect **clean, structured, and multi-language solutions** for the [NeetCode 150](https://neetcode.io/practice) problems.  
 
+👉 **GitHub Repo**: [ayushmehta03/neetcode-soln](https://github.com/ayushmehta03/neetcode-soln)  
+
 Whether you’re solving in **Python, Java, C, Go, Kotlin, or any other language**, your contributions are welcome! 🙌  
 
 ---
@@ -53,7 +55,7 @@ The repo follows a **language → topic → solution** format:
 
 ## ⚡ How to Contribute
 
-1. **Fork** this repo  
+1. **Fork** this repo → [ayushmehta03/neetcode-soln](https://github.com/ayushmehta03/neetcode-soln)  
 2. **Create a new branch** for your contribution  
    ```bash
    git checkout -b add-two-sum-python
@@ -102,9 +104,7 @@ Let’s keep this repo organized and beginner-friendly.
 
 Every contribution, big or small, is appreciated ❤️
 
-Star ⭐ this repo to support the project!
+Star ⭐ this repo to support the project → ayushmehta03/neetcode-soln
 
 
-
----
 
