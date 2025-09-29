@@ -3,7 +3,11 @@
 #include<unordered_map>
 using namespace std;
 
+// approach->hashmaps
 
+// time complexity->O(n)
+
+// space complexity -> O(n)
 
 
 bool check(vector<int>&nums){
