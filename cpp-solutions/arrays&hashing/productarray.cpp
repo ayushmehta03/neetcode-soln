@@ -5,6 +5,9 @@ using namespace std;
 
 // product of array except itself
 
+    // approach -> prefix sum
+    // time complexity-> O(N)
+    // space complexity -> O(1)
 
 vector<int>product(vector<int>&nums){
     int n=nums.size();
