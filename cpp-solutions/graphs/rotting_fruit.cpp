@@ -103,13 +103,13 @@ public:
 		// mark as "rotten"
                 grid[new_row][new_col] = 2;
 
-		// finally, add to our bfs and add the 1 minute that has been elapsed.
+		// finally, add the new state to our bfs and add the 1 minute that has been elapsed.
                 rottingQueue.emplace(new_row, new_col, curr_minutes + 1);
             }
         }
 
 
-	// At the end we check if there are still anew_col fresh fruits left. if there are then its impossible and we return -1
+	// At the end we check if there are still any fresh fruits left. if there are then its impossible and we return -1
         for(int i = 0; i < n; i++) {
             for(int j = 0; j < m; j++) {
                 if(grid[i][j] == 1) {
