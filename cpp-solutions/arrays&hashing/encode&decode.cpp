@@ -5,6 +5,10 @@
 using namespace std;
 
 
+// approach->string manipulation
+// time complexity-> O(N)
+// space complexiy O(N)
+
 
 
 // function for encoding the string 
