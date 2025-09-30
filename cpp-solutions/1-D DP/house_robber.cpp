@@ -4,6 +4,10 @@
 #include<algorithm>
 using namespace std;
 
+// approach-> dynamic programming
+// time complexity->O(n)
+// space complexity -> O(1)
+
 int rob(vector<int>&nums){
 
     // this variable is for i-1 means the just before the current 
