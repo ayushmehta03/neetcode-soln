@@ -5,6 +5,19 @@ using namespace std;
 
 
 
+// time and space complexity
+
+    // memoization
+    // time-> O(n*amount)
+    // space->O(n*amount)+O(n) recurssion
+
+
+    // tabulation
+        // time-> O(n*amount)
+    // space->O(n*amount)
+    // space can be optimized 
+
+
 
 
 
