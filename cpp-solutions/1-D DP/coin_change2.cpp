@@ -6,7 +6,8 @@ using namespace std;
 
 
 // time and space complexity
-
+ // same as the coin change 1 problem 
+ 
     // memoization
     // time-> O(n*amount)
     // space->O(n*amount)+O(n) recurssion
