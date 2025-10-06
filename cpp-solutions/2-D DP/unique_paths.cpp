@@ -4,7 +4,15 @@ using namespace std;
 
 
 
+// time complexity->
 
+// memoization -> O(nxm)
+// tabulation->O(nxm)
+
+// space  complexity ->
+
+// memoziation O(mxn)+O(n+m) (reurssive call)
+// tabulation->O(mxn)
 
 
 
