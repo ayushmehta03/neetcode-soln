@@ -1,1 +1,1 @@
-// interval problems solutions
+// interval problems solutions in c language
