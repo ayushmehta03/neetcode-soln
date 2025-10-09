@@ -6,6 +6,9 @@ using namespace std;
 
 
 
+// time complexity -> O((V+E)log V)
+// space complexity -> O(V+E)
+
 vector<int>dijkistraAlgo(vector<pair<int,int>>adj[],int src,vector<int>&distance){
 
     // the soruce to source will be 0
