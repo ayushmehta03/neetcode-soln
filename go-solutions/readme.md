@@ -1,1 +1,1 @@
-// golang solutions
+// golang neet code solutions
