@@ -39,7 +39,10 @@ using namespace std;
             // check for starting poing should not be infinity and the reaching node distance is greater tahn the starting and weight to reach it
            
             if(distance[u]!=1e8 &&distance[u]+w<distance[v]){
-                
+
+            // replace the existiing value 
+             distance[v]=distance[u]+w;
+
 
             }
         }
@@ -47,7 +50,23 @@ using namespace std;
 
         }
 
+        // last check for negative cycle return {-1} if there is negative cycle again
 
+        for(auto it:edges){
+           int u=it[0];
+            int v=it[1];
+            int w=it[2];
+
+            // this means still relaxation is possible and we have to return {-1}
+            if(distance[u]!=1e8 &&distance[u]+w<distance[v]){
+            return {-1};
+
+
+            } 
+        }
+
+        // return the distance vector if there is no negative cycle
+        return distance;
 
     }
 
@@ -69,6 +88,20 @@ int main(){
     // no of vertices / nodes
     int V=5;
 
+    // call the function passing edges source node and no of vertices
+
     vector<int>ans=bellamnFord(edges,src,V);
+
+    
+    if(ans[0]==-1){
+        cout<<"not possible there is negative cycle";
+    }
+
+    else{
+        for(auto it:ans){
+            cout<<" "<<it;
+        }
+    }
+    return 0;
 
 }
