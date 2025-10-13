@@ -3,12 +3,48 @@
 using namespace std;
 
 
+// time complexity-> O(nxm)
+// space complexity-> O(n*m)
+
+
+
+// func for checking all the neccesary conidtions 
+bool check(int row,int col,vector<vector<char>>&grid,vector<vector<int>>&visited){
+
+    int n=grid.size();
+    int m=grid[0].size();
+
+    // it will cehck for row should be either equal or greater than 0 and less than its value n same for column 
+    // and it should not be visited and we need to take only the landpart not the water 
+
+    return (row>=0&&row<n&&col>=0&&col<m&&!visited[row][col]&&grid[row][col]=='1');
+
+}
 
 // using recurssive dfs approach to solve this problem
 
-void dfs(int row,int col,vector<vector<int>>&vis,vector<vector<char>>&gird){
+void dfs(int row,int col,vector<vector<int>>&vis,vector<vector<char>>&grid){
     // once it is called mark the repsective row and col as visited 
     vis[row][col]=1;
+
+    // take the delta row and column for checking all the boundaries for row and column up down left and right 
+
+    // if the row goes up it will be -1 right no change down +1 and left no change
+    int delRow[4]={-1,0,1,0};
+
+    // if the col goes up no change right +1 down no change and left -1
+    int delCol[4]={0,1,0,-1};
+
+    // use a loop run it for 4 times for checking all conditions
+    for(int i=0;i<4;i++){
+     int nRow=row+delRow[i];
+     int nCol=delCol[i]+col;
+     if(check(nRow,nCol,grid,vis)){
+        // if it atisfies the condition call the dfs again
+        dfs(nRow,nCol,vis,grid);
+     }
+
+    }
 }
 
 
@@ -37,6 +73,7 @@ int numIsland(vector<vector<char>>&grid){
             }
         }
     }
+    return cnt;
 }
 
 
