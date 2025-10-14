@@ -3,6 +3,21 @@
 #include<queue>
 using namespace std;
 
+
+
+
+// time complexity-> O(N)
+
+// space complexity -> O(N)
+
+
+
+
+
+
+
+
+
 // constructing the binary search tree 
 
 struct Node{
@@ -29,6 +44,7 @@ Node*insert(Node*root,int val){
 
 
 
+// level order traversal in a binary search tree 
 
 vector<vector<int>>levelOrder(Node*root){
 
