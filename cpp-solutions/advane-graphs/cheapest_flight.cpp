@@ -4,6 +4,12 @@
 using namespace std;
 
 
+// time complexity-> O(E*K)
+
+// sc -> O(E+K)
+
+
+
 int cheapestFlight(int n,vector<vector<int>>&flights,int src,int dst,int k){
 
     // creating vector with pair contains dst and price
