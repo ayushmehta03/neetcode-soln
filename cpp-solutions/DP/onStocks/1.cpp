@@ -7,6 +7,12 @@ using namespace std;
 // you should buy the day before you sell this is the basic rule behind the solution
 
 
+// time complexity-> O(N) linear search
+
+// space complexity -> auxilary space O(1)
+
+// approach is greedy but it also fails under dp because we are memorizaing the max and minimum wrt the traversing the array
+
 
 
 // thie function calculates the maxProfit
