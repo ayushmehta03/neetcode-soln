@@ -5,6 +5,9 @@ using namespace std;
 // input is sorted in the vector for this problem
 
 
+// time complexity-> O(N)
+// space complexity -> O(1)
+
 
 // function for twoSum
 vector<int> twoSum(vector<int>&nums,int target){
