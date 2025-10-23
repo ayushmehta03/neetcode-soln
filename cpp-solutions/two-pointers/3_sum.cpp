@@ -12,6 +12,10 @@ using namespace std;
 // and there should not be any duplicate in the triplet
 
 
+// time complexity->O(n^2)
+
+//space complexity-> O(1) ->2d vector was expected in the output so auxilary space
+
 
 vector<vector<int>>threeSum(vector<int>&nums){
     // take the size of nums
@@ -77,6 +81,10 @@ int main(){
     // storing the 2d vector into answer vector
     vector<vector<int>>ans=threeSum(nums);
 
+
+    // logging the answer if vector is 0 it means not possible
+
+    // else just logging the data we get from the 3 sum function
 
 
     if(ans.size()==0){
