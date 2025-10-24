@@ -7,6 +7,9 @@ using namespace std;
 // binary search is a very common algo of searching in which the input is sorted and it search by dividing left and right side with help of middle
 
 
+// time complexity-> O(log n) 
+
+// space O(1)
 
 // it will return the index of target if it is present
 int binarySearch(vector<int>&nums,int target){
