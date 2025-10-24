@@ -5,6 +5,12 @@
 using namespace std;
 
 
+// time complexity -> O(N)
+
+// space complexity-> O(N)
+
+
+
 bool isValid(string &s){
 
     // declare a stack it follows lifo principle
