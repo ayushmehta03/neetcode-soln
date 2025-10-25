@@ -4,7 +4,8 @@ using namespace std;
 
 // searching in a 2d matrix with same logic as of the binary search
 
-
+// time complexity->O(logn*m)
+// space complexity->O(1)
 
 bool searchMatrix( vector<vector<int>>&matrix,int target){
 
