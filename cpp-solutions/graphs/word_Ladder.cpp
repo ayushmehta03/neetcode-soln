@@ -4,6 +4,12 @@
 #include<queue>
 using namespace std;
 
+// approach -> bfs using queue
+
+// time complexity->O(N*M)
+
+//space complexity -> O(N*M)
+
 // this function will return shortest no of steps
 
 int ladderLength(vector<string>&wordList,string beginWord,string endWord){
