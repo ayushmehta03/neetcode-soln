@@ -1,12 +1,62 @@
 #include<iostream>
 #include<vector>
-#include<set>
+#include<unordered_set>
+#include<queue>
 using namespace std;
 
-
+// this function will return shortest no of steps
 
 int ladderLength(vector<string>&wordList,string beginWord,string endWord){
-    
+
+// create a queue and store the word and steps so queue with pair will be required 
+    queue<pair<string,int>>q;
+
+    // create a unordered set and store all the words from the wordList which we need to generate 
+    unordered_set<string>st(wordList.begin(),wordList.end());
+
+    // push the starting word and step as 1
+
+    q.push({beginWord,1});
+
+    // now run until queue becomes empty
+    while(!q.empty()){
+
+        // take the word and step from queue
+        string word=q.front().first;
+        int steps=q.front().second;
+        q.pop();
+
+
+        // if the word and endword matches return the steps
+        if(word==endWord) return steps;
+        // traverse through each char of word
+        for(int i=0;i<word.size();i++){
+            
+            // store the orignal one and later on will change it to match with words present in the set
+            char orignal=word[i];
+
+            // check all the possibilties by changing it with all 26 chars
+            for(char ch='a';ch<='z';ch++){
+                word[i]=ch;
+                // once find the word push it to the queue and delete it from set because later on it is gurraentee if we get the word step will be higher
+                if(st.find(word)!=st.end()){
+                    q.push({word,steps+1});
+                    st.erase(word);
+                }
+
+            }
+
+            // give back the orignal char to the word for later on matching
+            word[i]=orignal;
+
+        }
+
+
+    }
+
+    // if it doesnt match with endword return 0
+    return 0;
+
 
 }
 
