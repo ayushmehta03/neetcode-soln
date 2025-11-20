@@ -7,6 +7,12 @@ using namespace std;
 
 
 
+// approach-> sliding window
+
+// time complexity-> O(N)
+
+// space complexity -> O(1)
+
 int getLongestSubstr(string s ){
 
     // hash array for storing last seen indexes of  character
