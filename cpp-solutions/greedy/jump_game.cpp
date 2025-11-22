@@ -3,6 +3,11 @@
 using namespace std;
 
 
+
+// time complexity -> O(N)
+
+// space complexity -> O(1)
+
 bool maxJump(vector<int>&nums){
 
 
