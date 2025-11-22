@@ -5,6 +5,13 @@ using namespace std;
 
 // jump game 2 we need minimum no of jumps to reach the last index
 
+
+// note-> we can also use dp approach for this solution
+
+    // time complexity-> O(n)
+
+    // space complexity -> O(1)
+
 int minJumps(vector<int>&nums){
 
     int n=nums.size();
