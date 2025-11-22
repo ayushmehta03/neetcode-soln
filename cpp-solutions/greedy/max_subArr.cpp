@@ -5,6 +5,8 @@ using namespace std;
 // using kadane algorithm solve max sub array sum problem
 
 
+// time complexity -> O(n)
+// SPACE COMPLEXITY -> O(1)
 
 
 int maxSum(vector<int>&nums){
