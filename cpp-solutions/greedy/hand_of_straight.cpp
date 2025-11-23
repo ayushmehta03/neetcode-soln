@@ -4,6 +4,11 @@
 using namespace std;
 
 
+
+// time complexity-> O(n logn)
+
+// space complexity -> O(n)
+
 bool handsofSt(vector<int>&hand,int grp){
 
 
