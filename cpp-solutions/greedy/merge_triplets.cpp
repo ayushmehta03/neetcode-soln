@@ -11,9 +11,9 @@ using namespace std;
 
 
 
-// time complexity -> 
+// time complexity -> O(N)
 
-// space complexity -> 
+// space complexity -> O(1)
 
 bool mergeTriplets(vector<vector<int>>&triplets,vector<int>target){
 
