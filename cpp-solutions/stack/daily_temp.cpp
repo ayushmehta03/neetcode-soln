@@ -7,9 +7,9 @@ using namespace std;
 
 // in this problem we have to find the next greater temperature difference with current one in terms of indexes
 
-// time complexity -> 
+// time complexity ->  O(N)
 
-// space complexity ->
+// space complexity -> O(N)
 
 
 vector<int>dailyTemp(vector<int>&temp){
