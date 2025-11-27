@@ -3,7 +3,9 @@
 using namespace std;
 
 
+// time complexity -> O(log n) -> binary serach
 
+// space complexity -> O(1) -> no extra space
 
 
 
