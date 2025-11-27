@@ -3,6 +3,11 @@
 #include<climits>
 using namespace std;
 
+
+// time complexity -> O(log n) -> binary serach
+
+// space complexity -> O(1) -> no extra space 
+
 int findMin(vector<int>&nums){
 
     // get the no of elements
