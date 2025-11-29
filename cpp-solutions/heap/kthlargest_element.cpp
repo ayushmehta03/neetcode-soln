@@ -5,6 +5,10 @@ using namespace std;
 
 
 
+// time complexity -> O(nlogk)
+
+// space complexity ->  O(k)
+
 // in this question we have to find the kth largest element
 // it means suppose if have data like this 1 2 3 4 5 6 7
 
@@ -58,7 +62,7 @@ int main(){
 
     cout<<"the kth largest element will be: "<<ans;
 
-    
+
 
 
 }
