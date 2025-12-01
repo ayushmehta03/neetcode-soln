@@ -11,6 +11,9 @@ using namespace std;
 
 // recurssive solution
 
+// time complexity -> O(2^(n+m))
+
+// space complexity ->  O(n+m)
 
 int f(int i,int j,string&s,string&t){
 
@@ -30,6 +33,8 @@ int f(int i,int j,string&s,string&t){
 
 }
 
+
+// dp solution below:
 
 
 
