@@ -39,7 +39,7 @@ int f(int i,int j,string&s,string&t){
 
 // time complexity -> O(n*m)
 
-// space complexity -> O(n*m)
+// space complexity -> O(n*m) due to dp vector
 
  int longestCommonSubsequence(string &s,string &t){
 
