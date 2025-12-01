@@ -37,6 +37,58 @@ int f(int i,int j,string&s,string&t){
 // dp solution below:
 
 
+// time complexity -> O(n*m)
+
+// space complexity -> O(n*m)
+
+ int longestCommonSubsequence(string &s,string &t){
+
+
+    // calculate the size of both of the text
+    int n=s.size();
+    int m=t.size();
+
+
+    // contsruct the dp vector for tabulation
+
+    vector<vector<int>>dp(n+1,vector<int>(m,0));
+
+    // storing the rule for the dp in case the string is empty
+
+    for(int i=0;i<=n;i++) dp[i][0]=0;
+
+    for(int i=0;i<=m;i++)dp[0][i]=0;
+
+    // finding the longest common subequence
+
+    for(int idx1=1;idx1<=n;idx1++){
+        for(int idx2=1;idx2<=m;idx2++){
+
+
+            // if the match is found we will add 1 and take the previous value till now and store it in the current index positions
+            if(s[idx1-1]==t[idx2-1]){
+                dp[idx1][idx2]=1+dp[idx1-1][idx2-1];
+            }
+
+            // if the characters doesnt match take the max from top and left
+             
+            else{  
+                dp[idx1][idx2]=max(dp[idx1-1][idx2],dp[idx1][idx2-1]);
+
+
+            }
+        }
+    }
+
+    // return the result
+
+    return dp[n][m];
+
+
+
+ }
+
+
 
 int main(){
 
@@ -51,9 +103,12 @@ int main(){
 
     // calling the recurssive function starting with the last index of both of the string
 
-    int recurssiveAns=f(n-1,m-1,s,t);
+  /* int recurssiveAns=f(n-1,m-1,s,t);
 
-    cout<<recurssiveAns;
+    cout<<recurssiveAns; */
+
+    int dpSoln=longestCommonSubsequence(s,t);
+    cout<<dpSoln;
 
 
 }
