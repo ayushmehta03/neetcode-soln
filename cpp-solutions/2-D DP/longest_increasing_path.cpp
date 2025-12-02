@@ -43,7 +43,50 @@ int dfs(int i,int j,vector<vector<int>>&mat){
     }
 
     // moving in down direction 
-    
+
+    // again for moving down the next one should be smaller than n-1 so that it doesnt get out of indexing
+    // and the next cell value should be greater than the previous one
+
+    if(i<n-1&&mat[i+1][j]>mat[i][j]){
+     // add 1 to the next call as this condition satisfied 
+        
+
+     best=max(best,1+dfs(i+1,j,mat));
+    }
+
+
+    // moving left
+   // again for moving left j value should be greater tahn 0   so that it doesnt get out of indexing
+
+
+   if(j>0 &&mat[i][j-1]>mat[i][j]){
+     // add 1 to the next call as this condition satisfied 
+
+
+    best=max(best,1+dfs(i,j-1,mat));
+   }
+
+
+   // moving right 
+
+   // for moving right than j value should be smaller than the last one so that indexing doesnt get out of bound
+
+   // and the next cell value should be greater than than the previous one 
+
+   if(j<m-1&&mat[i][j+1]>mat[i][j]){
+      // add 1 to the next call as this condition satisfied 
+
+    best=max(best,1+dfs(i,j+1,mat));
+   }
+
+
+   // store the result in dp[i][j] before returning 
+
+
+    dp[i][j]=best;
+
+    return best;
+
 }
 
 int main(){
@@ -74,6 +117,8 @@ int main(){
             lipm=max(lipm,dfs(i,j,matrix));
         }
     }
+
+    cout<<"the longest increasing path value is: "<<lipm;
 
 
 
