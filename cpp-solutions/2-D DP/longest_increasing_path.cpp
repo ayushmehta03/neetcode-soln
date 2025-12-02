@@ -11,6 +11,9 @@ using namespace std;
 // we will use memoization technique of dp to solve this 
 
 
+// time complexity -> O(n*m)
+// space complexity -> O(n*m)+ recursion stack
+
 vector<vector<int>>dp;
 
 // recurssive function along with memoization
