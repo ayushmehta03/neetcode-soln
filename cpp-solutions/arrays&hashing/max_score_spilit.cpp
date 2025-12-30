@@ -4,6 +4,11 @@
 using namespace std;
 
 
+
+// time compleixty -> O(n)
+
+// space complexity -> O(n)
+
 // the basic approach of this porblem is to calculate the prefix sum and get the suffix minimum calculate the difference and return the max possible 
 
 // prefix sum -> O to i sum
